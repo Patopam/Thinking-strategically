@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Player</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+	</head>
+	<body>
+		<h1>Enter Player Information</h1>
+		<form id="player-form">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required />
+			<button type="submit">Submit</button>
+		</form>
+
+		<div id="move-selection" class="hidden">
+			<h2>Select Your Move</h2>
+			<p id="timer">Time left: 10s</p>
+			<button data-move="rock"><i class="fa-solid fa-hand-back-fist"></i></button>
+			<button data-move="paper"><i class="fa-solid fa-hand"></i></button>
+			<button data-move="scissors"><i class="fa-solid fa-hand-scissors"></i></button>
+		</div>
+
+		<script src="player.js"></script>
+	</body>
+</html>
